@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Table Data</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+         $(document).ready(function (){
+        $("#newrow").click(function(){
+            var addcontrols="<tr>"
+                addcontrols+="<td><input type='text' name='' placeholder='..'></td>"
+                addcontrols+="<td><input type='text' name='' placeholder='..'></td>"
+                addcontrols+="<td><input type='text' name='' placeholder='..'></td>"
+                addcontrols+="<td><input type='text' name='' placeholder='..'></td>"
+                addcontrols+="<td><input type='text' name='' placeholder='..'></td>"
+                  addcontrols+="</tr>"
+                $("table").append(addcontrols);
+                
+        }) ;
+         });
+    </script>
+   
+    
+</head>
+<body >
+     <table  border="1">
+        <tr>
+      <th> SL.NO</th>
+      <th> First Name</th>
+      <th> Last Name</th>
+      <th> City</th>
+      <th> Country</th>
+    </tr>
+       <tr>
+           <td> 01  </td>
+           <td> Ram  </td>
+           <td> Mishra </td>
+           <td> Mumbai  </td>
+           <td> India  </td>
+       </tr>
+
+       <tr>
+        <td> 02  </td>
+        <td> Sai </td>
+        <td> Kumar</td>
+        <td> Delhi  </td>
+        <td> India  </td>
+    </tr>
+
+    <tr>
+        <td> 03 </td>
+        <td> Mohan  </td>
+        <td> raj </td>
+        <td> Chennai </td>
+        <td> India  </td>
+    </tr>
+
+    <tr>
+        <td> 04 </td>
+        <td> Gopal  </td>
+        <td> Krishna </td>
+        <td> Kolkata  </td>
+        <td> India  </td>
+    </tr>
+
+    <tr>
+        <td> 05 </td>
+        <td> Raju  </td>
+        <td> Sharma </td>
+        <td> Hyderabada  </td>
+        <td> India  </td>
+    </tr>
+      <tfoot>
+        <tr> 
+        <td colspan="5"><input type="button" value="add new row" id="newrow" style="width: 500px; "></td>    
+        </tr>
+      </tfoot>
+     </table>
+</body>
+</html>
